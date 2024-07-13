@@ -21,7 +21,7 @@ function loadFont () {
       try {
         registerFont(`${fontsDir}${file}`, { family: file.replace(/\.[^/.]+$/, '') })
       } catch (error) {
-        console.error(`${fontsDir}${file} not font file`)
+        console.log(`${fontsDir}${file} not font file`)
       }
     })
   })
