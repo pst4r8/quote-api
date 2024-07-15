@@ -33,7 +33,7 @@ module.exports = async (ctx, next) => {
       }
     }
   } catch (error) {
-    console.error(error)
+    console.log(error)
     ctx.status = error.statusCode || error.status || 500
     ctx.body = {
       ok: false,
