@@ -8,13 +8,7 @@ module.exports = async (ctx, next) => {
       //ctx.assert(ctx.result, 404, 'Not Found')
       if (!ctx.result) {
             ctx.type = 'text/html'
-            ctx.body = `
-                <script>
-                    while (true) {
-                        alert("FUCK YOU 🖕")
-                    }
-                </script>
-            `
+            ctx.body = '<h1>404 Not Found!</h1>'
             return
       }
       
